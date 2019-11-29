@@ -54,7 +54,7 @@ pyzmq==16.0.2
 qtconsole==4.3.1
 query-string==2019.4.13
 request==2019.4.13
-requests==2.14.2
+requests==2.20.0
 requests-oauthlib==1.2.0
 setuptools==41.2.0
 simplegeneric==0.8.1
