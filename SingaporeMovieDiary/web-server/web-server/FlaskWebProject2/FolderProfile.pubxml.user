@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\YYL\source\repos\FlaskWebProject2\FlaskWebProject2\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="FlaskWebProject2/API_control.py">
+      <publishTime>10/20/2019 17:57:45</publishTime>
+    </File>
+    <File Include="FlaskWebProject2/commentClass.py">
+      <publishTime>10/19/2019 02:43:10</publishTime>
+    </File>
+    <File Include="FlaskWebProject2/database_control.py">
+      <publishTime>10/21/2019 21:27:30</publishTime>
+    </File>
+    <File Include="FlaskWebProject2/movieClass.py">
+      <publishTime>10/16/2019 03:47:29</publishTime>
+    </File>
+    <File Include="FlaskWebProject2/userClass.py">
+      <publishTime>10/17/2019 18:38:53</publishTime>
+    </File>
+    <File Include="FlaskWebProject2/views.py">
+      <publishTime>10/21/2019 21:15:19</publishTime>
+    </File>
+    <File Include="FlaskWebProject2/__init__.py">
+      <publishTime>10/17/2019 22:17:22</publishTime>
+    </File>
+    <File Include="requirements.txt">
+      <publishTime>10/18/2019 22:49:22</publishTime>
+    </File>
+    <File Include="runserver.py">
+      <publishTime>10/16/2019 18:56:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style type="text/css">
+        body{
+            background-image:url(./img/7.jpg);
+        }
+        #page5{
+            position: fixed;
+            top:0;
+            left:0;
+            height:10%;
+            line-height: 10%;
+            background-color: rgba(35, 35, 35, 0.92);
+            width:100%;
+        }
+        #logo{
+            position:fixed;
+            top:1%;
+            left:2%;
+            height:7%;
+            line-height:7%;
+        }
+
+        #return5{
+            position: fixed;
+            top:3%;
+            height: 40px;
+            line-height: 40px;
+            width:60px;
+            right:40px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+
+        #signin{
+            position:fixed;
+            top:15%;
+            left:44%;
+            font-size: 30px;
+        }
+
+        #username5{
+            position:fixed;
+            top:30%;
+            left:40%;
+            height: 10%;
+            line-height: 10%;
+            font-size: 20px;
+        }
+
+        #password5{
+            position:fixed;
+            top:37%;
+            left:40%;
+            height: 10%;
+            line-height: 10%;
+            font-size: 20px;
+        }
+
+        #confirm5{
+            position:fixed;
+            top:45%;
+            left:42%;
+            height: 50px;
+            line-height: 50px;
+            width:100px;
+        }
+
+        #cancel5{
+            position:fixed;
+            top:45%;
+            left:50%;
+            height: 50px;
+            line-height: 50px;
+            width:100px;
+        }
+    </style>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <div id="page5">
+        <img id="logo" src="./img/logo.jpg">
+        <button id="return5" onclick="btnreturn5()"> return</button>
+    </div>
+
+<div style="position:fixed; top:15%; left:25%; width:700px; height: 500px; background-image:url(./img/.jpg);">
+    <p id="signin"style="color: white;font-size:48px; font-weight: bold">Register</p>
+
+    <div id="username5" style="color: white;font-size:24px; font-weight: bold">
+        Username
+        <input id="text" type="text" value="" placeholder="Username" name="" style=position:relative;left:10px;width:150px;height:25px;>
+    </div>
+
+    <div id="password5" style="color: white;font-size:24px; font-weight: bold">
+        Password
+        <input id="password" type="password" value="" placeholder="Password" name="" style=position:relative;left:15px;width:150px;height:25px;>
+
+
+    </div>
+
+    <div style="position: relative; top:10%; left:40%">
+        <button id="confirm5" style="width:100px;height:50px;border:2px darkslategrey;font-family: 'Times New Roman';font-size: large" onclick="btnconfirm5()">confirm</button>
+        <button id="cancel5" style="width:100px;height:50px;border:2px darkslategrey;font-family: 'Times New Roman';font-size: large" onclick="btncancel5()">cancel</button>
+    </div>
+
+    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="SignUp.js"></script>
+</body>
+</html>

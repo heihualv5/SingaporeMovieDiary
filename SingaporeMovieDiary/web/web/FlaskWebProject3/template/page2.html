@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Page</title>
+    <style type="text/css">
+        #page2{
+            position: fixed;
+            top:0;
+            left:0;
+            height:10%;
+            line-height: 10%;
+            background:rgba(35, 35, 35, 0.92);
+            width:100%;
+        }
+        #logo{
+            position:fixed;
+            top:1%;
+            left:2%;
+            height:7%;
+            line-height:7%;
+        }
+        #return2{
+            position: fixed;
+            top:3%;
+            height: 40px;
+            line-height: 40px;
+            width:60px;
+            right:40px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+        #map2{
+            position:fixed;
+            top:10%;
+            left:0;
+            width: 40%;
+            height: 90%;
+            background-color: dimgray;
+        }
+        #poster2{
+            position: fixed;
+            top:10%;
+            left:40%;
+            width: 15%;
+            height:30%;
+            background: gainsboro;
+            text-align: center;
+            vertical-align: center;
+            background-color:rgb(36,36,36);
+            padding: 15px 0 0 0;
+        }
+        #movieinfo2{
+            position:fixed;
+            top:10%;
+            left: 55%;
+            width: 45%;
+            height:40%;
+            background-color:rgb(36,36,36);
+            color: white;
+            padding: 20px 0 0 0;
+        }
+        #review2{
+            position: fixed;
+            bottom:0;
+            height: 40px;
+            line-height: 40px;
+            width:60px;
+            right:40px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+        #comments2{
+            padding-top: 2%;
+            position:fixed;
+            bottom:0%;
+            left:40%;
+            width:60%;
+            height:60%;
+            background:darkgrey;
+            background-color:rgb(36,36,36);
+            overflow: auto;
+        }
+        #moviename
+        {
+            font-family: "Georgia";
+            font-size: 18px;
+            font-style:italic;
+        }
+        #movieinfo
+        {
+            padding:  0 0 0 18px ;
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        #synopsis
+        {
+            padding:  0 18px 0 18px ;
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        #cinema{
+            padding:  0 18px 0 18px ;
+            font-family: "Times New Roman";
+            font-size: 14px;
+        }
+        .usercomments{
+            grid-template-columns:32% 68%;
+        }
+        .moviecomment{
+            color: white;
+            padding:  0 18px 0 18px ;
+            font-family: "Times New Roman";
+
+        }
+        .context{
+            font-family: "Times New Roman";
+            font-size: 16px;
+        }
+        #space{
+            height:25px;
+        }
+        #Rate{
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        #Movietime{
+            width:100%;
+            font-family: "Times New Roman";
+            font-size: 13px;
+            text-align: right;
+        }
+        #Moviename{
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        #Username{
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        .usercomment{
+            border:2px darkslategrey;
+        }
+        .moviecomment{
+            border:2px darkslategrey;
+        }
+    </style>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <div id="page2">
+    <img id="logo" src="./img/logo.jpg">
+    <button id="return2" onclick="btnreturn2()">return</button>
+    </div>
+
+    <table id="table" border="0">
+        <tbody>
+        <tr>
+            <td id="map2"></td>
+        </tr>
+        <tr>
+            <td id="poster2"></td>
+            <td id="movieinfo2"></td>
+        </tr>
+        <tr>
+            <td id="comments2"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button id="review2" onclick="btnreview2()">review</button>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="MoviePage.js"></script>
+</body>
+</html>

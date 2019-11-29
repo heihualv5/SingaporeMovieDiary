@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Singapore Movie</title>
+    <style type="text/css">
+        #page1{
+            position: fixed;
+            top:0;
+            left:0;
+            height:20%;
+            line-height: 10%;
+            background-color:rgba(35, 35, 35, 0.92);
+            width:100%;
+        }
+        #logo{
+            position:fixed;
+            top:1%;
+            left:2%;
+            height:7%;
+            line-height: 7%;
+        }
+        .buttontop {
+            position: fixed;
+            top:3%;
+            height: 40px;
+            line-height: 40px;
+            width:100px;
+            right:180px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+        .buttondown{
+            position:fixed;
+            top:3%;
+            height: 40px;
+            line-height: 40px;
+            width:100px;
+            right:40px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+        #movieinfo2{
+            position: fixed;
+            top:10%;
+            margin-right: 60%;
+            left:0;
+            width: 40%;
+            height:90%;
+            background-image:url(./img/7.jpg);
+        }
+        #movieinfo1{
+            position: fixed;
+            top:10%;
+            margin-right: 60%;
+            left:0;
+            width: 40%;
+            height:90%;
+            background: rgba(176,200,225,0.33);
+        }
+        #movieinfowrapper{
+            position: fixed;
+            top:10%;
+            margin-right: 60%;
+            left:0;
+            width:40%;
+            height:87%;
+            background: rgba(176,200,225,0.0001);
+            overflow: auto;
+        }
+        .movieinfo{
+            position: absolute;
+            top:22%;
+            margin-right: 60%;
+            left:0;
+            width: 40%;
+            height:87%;
+            background: rgba(176,200,225,0.0001);
+        }
+        #pagenumber{
+            position: fixed;
+            top:97%;
+            margin-right: 60%;
+            left:0;
+            width: 40%;
+            height:3%;
+            background:rgba(176,200,225,0.0001);
+            text-align: center;
+            padding: 4px 0 0 0;
+        }
+        .moviespage{
+            font-weight:bold;
+            boder:1px;
+            solid: rgba(212, 209, 200, 0.78);
+            padding: 5px 7px;
+            color: #fafaf8;
+            cursor: pointer;
+        }
+        .moviespage:hover{
+            color: #820d00;
+        }
+        .newmoviediv{
+            display:grid;
+            grid-template-columns:28% 70% 2%;
+            border:1px dashed rgba(35, 35, 35, 0.92)
+         }
+        .newcinemadiv{
+            display:grid;
+            grid-template-columns:68% 30% 2%;
+        }
+        #map1{
+            position:fixed;
+            top:10%;
+            margin-left: 40%;
+            left:0;
+            width:60%;
+            height:90%;
+            background-image:url(./img/5.jpg);
+        }
+        #loadinghide{
+            position:fixed;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            background: white;
+            opacity:0.98;
+            z-index:1000;
+        }
+        #gif{
+            position:fixed;
+            height:300px;
+            width:400px;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index:1001;
+        }
+        .infodiv{
+            height:100%;
+            width:auto;
+            font-weight:normal;
+            padding: 8px 4px 0 14px;
+            color: white;
+        }
+        .posterdiv{
+            padding: 4px 0 0 14px;
+        }
+        .cinemainfo{
+            padding: 8px 4px 0 18px;
+            color: white;
+            height: 30px;
+            font-family: "Luminari";
+        }
+        .showtimeinfo{
+            padding: 0 4px 0 14px;
+            color: white;
+            line-height:1.5;
+            font-size: 14px;
+            height: 30px;
+            font-family: "Luminari";
+        }
+        .DIVOnShowCinema_id{
+            padding: 0 4px 0 14px;
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: "Luminari";
+        }
+        .backtoallmovies{
+            height: 30px;
+            line-height: 30px;
+            width:80px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+    </style>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <div id="page1">
+        <img id="logo" src="./img/logo.jpg">
+        <button class="buttontop" id="signin" onclick="btnsignin()"> Log In </button>
+        <button class="buttondown" id="signup" onclick="btnsignup()"> Register </button>
+        <button class="buttontop" id="myprofile" style="display: none;" onclick="btnmyprofile()"> My Profile </button>
+        <button class="buttondown" id="signout"  style="display: none;" onclick="btnsignout()"> Sign Out </button>
+    </div>
+<div>
+    <div id="movieinfo2">
+    <div id="movieinfo1">
+        <div id="movieinfowrapper">
+            <div id="movieinfo"></div>
+        </div>
+        <div id="pagenumber"></div>
+    </div></div>
+    <div id="map1"></div>
+
+</div>
+<div id="loadinghide">
+    <div id="gif"><img src="./img/loading.gif"></div>
+</div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="mainJS.js"></script>
+</body>
+</html>

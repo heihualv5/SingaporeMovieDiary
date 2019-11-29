@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introductory Page</title>
+    <style type="text/css">
+        body{
+            background-color: rgba(35, 35, 35, 0.92) ;
+        }
+        #page7{
+            position: fixed;
+            top:0;
+            left:0;
+            height:10%;
+            line-height: 10%;
+            background-color: rgba(35, 35, 35, 0.92);
+            width:100%;
+        }
+        #logo{
+            position:fixed;
+            top:1%;
+            left:2%;
+            height:7%;
+            line-height:7%;
+        }
+        a,a:link,a:visited,a:hover{
+            color:white;
+            font-size: 35px;
+            width: 60%;
+        }
+    </style>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body id="body">
+<div id="page7">
+    <img id="logo" src="./img/logo.jpg">
+</div>
+<div style="position:fixed;left: 0%;top: 10%;height: 90%;width: 100%; background-color: black"><img src="./img/bkg.jpg" style="height: 100%;width: 100%">
+    <div style="position:fixed;left: 10%;top: 10%;height: 90%;width: 80%; background-color: rgba(12, 12, 12, 0.8)">
+        <div style="position:fixed; top: 10%; left: 20%;width: 60%; height: 90%">
+            <marquee behavior="slide" scrollapmount="0.5" direction="up" style="color: #fafaf8; font-size:20px"><br><br><br><br>If you are a film fan looking for a theatre or reviews of a film, or wishing to share your own opinion, you have come to the right place.<br><br>This film info sharing platform is created not only to be an online aggregator of film reviews from grass roots, but also a social network for film discussion and discovery for movie lovers in Singapore.<br><br>Simply use it as a diary to record, rate and share your opinion on films as you watch them, or just to keep track of films you have seen in the past.<br><br>We also serve film fans with a comprehensive list of latest films screened in Singapore, together with their showtimes in various cinemas.<br><br><br><br><div style="width: 100%" align="right"><a align="right">click anywhere to continue...</a></div></marquee>
+        </div>
+    </div>
+</div></div>
+<script>
+    document.getElementById("body").addEventListener("click",function () {
+        window.location.href = "page1.html";
+    })
+</script>
+</body>
+</html>

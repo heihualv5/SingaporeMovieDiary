@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My profile</title>
+    <style type="text/css">
+        body{
+            background-image:url(./img/7.jpg);
+        }
+        #page4{
+            position: fixed;
+            top:0;
+            left:0;
+            height:10%;
+            line-height: 10%;
+            background-color: rgba(35, 35, 35, 0.92);
+            width:100%;
+        }
+        #logo{
+            position:fixed;
+            top:1%;
+            left:2%;
+            height:7%;
+            line-height:7%;
+        }
+
+        #return4{
+            position: fixed;
+            top:3%;
+            height: 40px;
+            line-height: 40px;
+            width:60px;
+            right:40px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+
+        #map4{
+            position: fixed;
+            top:10%;
+            margin-right: 50%;
+            left:0;
+            width: 50%;
+            height:90%;
+            background: gainsboro;
+            background-image:url(./img/5.jpg);
+        }
+        #mycomments{
+            position:fixed;
+            color:white;
+            top:10%;
+            margin-left: 50%;
+            left:0;
+            width:48%;
+            height:90%;
+            background:rgba(35, 35, 35, 0.92);
+            overflow: auto;
+            padding-left: 1% ;
+            padding-right: 1% ;
+        }
+        #moviename
+        {
+            font-family: "Georgia";
+            font-size: 18px;
+            font-style:italic;
+        }
+        #movieinfo
+        {
+            padding:  0 0 0 18px ;
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        #synopsis
+        {
+            padding:  0 18px 0 18px ;
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        #cinema{
+            padding:  0 18px 0 18px ;
+            font-family: "Times New Roman";
+            font-size: 14px;
+        }
+        .usercomments{
+            grid-template-columns:32% 68%;
+        }
+        .moviecomment{
+            color: white;
+            padding:  0 18px 0 18px ;
+            font-family: "Times New Roman";
+
+        }
+        .context{
+            font-family: "Times New Roman";
+            font-size: 16px;
+        }
+        #space{
+            height:25px;
+        }
+        #Rate{
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        #Movietime{
+            width:100%;
+            font-family: "Times New Roman";
+            font-size: 13px;
+            text-align: right;
+        }
+        #Moviename{
+            font-family: "Times New Roman";
+            font-size: 13px;
+
+        }
+        #Username{
+            font-family: "Times New Roman";
+            font-size: 13px;
+        }
+        .usercomment{
+            border:2px darkslategrey;
+        }
+        .moviecomment{
+            border:2px darkslategrey;
+        }
+        .myhistoricalcomments{
+            grid-template-columns:32% 68%;
+        }
+    </style>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <div id="page4">
+        <img id="logo" src="./img/logo.jpg">
+        <button id="return4" onclick="btnreturn4()"> return</button>
+    </div>
+
+    <div id="map4"></div>
+
+    <div id="mycomments"></div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="MyProfile.js"></script>
+</body>
+</html>

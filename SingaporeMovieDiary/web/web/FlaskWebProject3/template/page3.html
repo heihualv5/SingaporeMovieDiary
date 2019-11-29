@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments Page</title>
+    <style type="text/css">
+        body{
+            background-image:url(./img/7.jpg);
+        }
+        #page3{
+            position: fixed;
+            top:0;
+            left:0;
+            height:10%;
+            line-height: 10%;
+            background-color: rgba(35, 35, 35, 0.92);
+            width:100%;
+        }
+        #logo{
+            position:fixed;
+            top:1%;
+            left:2%;
+            height:7%;
+            line-height:7%;
+        }
+
+        #return3{
+            position: fixed;
+            top:3%;
+            height: 40px;
+            line-height: 40px;
+            width:60px;
+            right:40px;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+
+        #map3{
+            position: fixed;
+            top:15%;
+            left:0;
+            height: 73%;
+            line-height: 73%;
+            width:40%;
+            background: dimgrey;
+            background-image:url(./img/5.jpg);
+        }
+
+        #user3{
+            position: fixed;
+            top:15%;
+            left:42%;
+            height:6%;
+            text-align: center;
+            vertical-align: middle;
+            font-family: "Gill Sans";
+            font-size: 36px;
+            color: white;
+
+        }
+
+        #cinema3{
+            position: fixed;
+            top:27%;
+            left:42%;
+            height:6%;
+            text-align: center;
+            vertical-align: middle;
+            font-family: Optima;
+            font-size: 36px;
+            color: white;
+        }
+
+        #film3{
+            position: fixed;
+            top:21%;
+            left:42%;
+            height:6%;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 36px;
+            font-family: Helvetica;
+            color: white;
+        }
+
+        #time3{
+            position: fixed;
+            top:21%;
+            left:70%;
+            height:6%;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 36px;
+            font-family: Helvetica;
+            color: white;
+        }
+
+        #rate3{
+            position:fixed;
+            top:33%;
+            left:61%;
+            height:8%;
+            width:12%;
+            font-size: 50px;
+            font-family: Lucida Family;
+            color: white;
+            text-align: center;
+            background-color: rgba(176, 200, 225, 0.33);
+            border:2px lightslategrey;
+        }
+
+        #comments3{
+            position: fixed;
+            top:48%;
+            left:62%;
+            height:10%;
+            line-height: 10%;
+            width:13%;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: rgba(110, 110, 110, 0.55);
+        }
+
+
+        #context3{
+            position: fixed;
+            top:42%;
+            left:42%;
+            height:46%;
+            width:52%;
+            font-size: 30px;
+            font-family: Arial;
+            color: white;
+            background-color: rgba(176, 200, 225, 0.33);
+            border:2px lightslategrey;
+        }
+
+        #submit3{
+            position: fixed;
+            top:88.5%;
+            height: 40px;
+            line-height: 40px;
+            width:60px;
+            right:5.7%;
+            font-family: "Times New Roman";
+            font-size: 14px;
+            color: aliceblue;
+            border:2px darkslategrey;
+            background-color:dimgrey;
+        }
+    </style>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <div id="page3">
+    <img id="logo" src="./img/logo.jpg">
+    <button id="return3" onclick="btnreturn3()"> return</button>
+    </div>
+
+    <div id="map3">
+    </div>
+
+    <table border="0">
+        <tbody>
+        <tr>
+            <td id="user3">user</td>
+            <td id="cinema3">cinema</td>
+            <td id="time3">time</td>
+            <td id="film3"></td>
+        </tr>
+        <tr>
+            <td id="comments3"><div style="text-align: center; margin-top:20%">comments</div></td>
+
+            <td><textarea style="resize:none;" id="rate3" placeholder="rate"></textarea></td>
+
+        </tr>
+        <tr>
+            <td><textarea style="resize:none;" id="context3" ></textarea></td>
+            <td><button id="submit3" onclick="btnsubmit3()">submit</button></td>
+        </tr>
+        </tbody>
+    </table>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="CommentPage.js"></script>
+</body>
+</html>
