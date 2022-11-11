@@ -46,7 +46,7 @@ pyodbc==4.0.27
 pyparsing==2.2.0
 pypiwin32==223
 PySocks==1.7.1
-pyspark==2.4.4
+pyspark==3.2.2
 python-dateutil==2.6.1
 pytz==2017.2
 pywin32==225
