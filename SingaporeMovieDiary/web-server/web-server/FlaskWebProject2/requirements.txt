@@ -68,7 +68,7 @@ traitlets==4.3.2
 tweepy==3.8.0
 wcwidth==0.1.7
 Werkzeug==0.16.0
-wheel==0.29.0
+wheel==0.38.1
 widgetsnbextension==3.0.2
 wincertstore==0.2
 win-unicode-console==0.5
