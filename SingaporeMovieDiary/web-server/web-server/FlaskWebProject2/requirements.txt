@@ -56,7 +56,7 @@ query-string==2019.4.13
 request==2019.4.13
 requests==2.14.2
 requests-oauthlib==1.2.0
-setuptools==41.2.0
+setuptools==65.5.1
 simplegeneric==0.8.1
 six==1.10.0
 soupsieve==1.9.4
